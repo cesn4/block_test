@@ -21,9 +21,7 @@ class MainLayout extends StatelessWidget with BaseExtension {
           value: SystemUiOverlayStyle.dark,
           child: SafeArea(
             child: SingleChildScrollView(
-              child: Container(
-                  padding: const EdgeInsets.symmetric(
-                      vertical: 20, horizontal: 40),
+              child: SizedBox(
                   width: maxWidth(context),
                   height: maxHeight(context),
                   child: child),
