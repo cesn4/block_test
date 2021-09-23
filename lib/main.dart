@@ -1,6 +1,5 @@
+import 'package:block_test/login/login_page.dart';
 import 'package:flutter/material.dart';
-
-import 'counter/counter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +16,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             colorScheme: const ColorScheme.dark()
                 .copyWith(primary: Colors.amber, secondary: Colors.black)),
-        home: const CounterPage());
+        home: const LoginPage());
   }
 }
