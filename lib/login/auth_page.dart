@@ -1,4 +1,4 @@
-import 'package:block_test/login/bloc/login_bloc.dart';
+import 'package:block_test/login/login_bloc/login_bloc.dart';
 import 'package:block_test/login/views/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

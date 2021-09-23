@@ -22,8 +22,8 @@ class MainLayout extends StatelessWidget with BaseExtension {
           child: SafeArea(
             child: SingleChildScrollView(
               child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 20, horizontal: 40),
                   width: maxWidth(context),
                   height: maxHeight(context),
                   child: child),
