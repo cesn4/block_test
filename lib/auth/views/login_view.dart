@@ -1,4 +1,4 @@
-import 'package:block_test/login/auth_page_cubit/auth_cubit.dart';
+import 'package:block_test/auth/auth_page_cubit/auth_cubit.dart';
 import 'package:block_test/widgets/buttons/basic_button.dart';
 import 'package:block_test/widgets/buttons/basic_icon_button.dart';
 import 'package:block_test/widgets/buttons/basic_text_button.dart';

@@ -1,4 +1,4 @@
-import 'package:block_test/login/auth_page.dart';
+import 'package:block_test/auth/auth_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

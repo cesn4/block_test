@@ -17,6 +17,8 @@ dependencies:
   bloc: ^7.2.0
   flutter_bloc: ^7.3.0
 
+  formz: ^0.4.0
+
   # Data models
   freezed_annotation: ^0.15.0
   json_annotation: ^4.0.1
