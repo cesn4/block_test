@@ -1,0 +1,1 @@
+enum AuthView { login, register }

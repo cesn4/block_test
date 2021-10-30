@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BaseExtension {
+mixin BaseExtension {
   ColorScheme colors(BuildContext context) {
     return Theme.of(context).colorScheme;
   }
