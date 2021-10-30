@@ -1,5 +1,4 @@
 import 'package:block_test/login/auth_page.dart';
-import 'package:block_test/paint/paint_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,6 +16,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             colorScheme: const ColorScheme.dark()
                 .copyWith(primary: Colors.amber, secondary: Colors.black)),
-        home: const PaintPage());
+        home: const AuthPage());
   }
 }

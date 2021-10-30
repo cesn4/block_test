@@ -1,0 +1,27 @@
+case $1 in
+
+  watch)
+    flutter pub run build_runner watch --delete-conflicting-outputs
+    ;;
+
+  build)
+    flutter pub run build_runner build --delete-conflicting-outputs
+    ;;
+
+  format)
+    flutter format lib/app lib/helpers lib/models lib/services lib/store lib/theme lib/ui
+    ;;
+
+  pod-reset)
+    flutter clean
+    rm -Rf ios/Pods
+    rm -Rf ios/.symlinks
+    rm -Rf ios/Flutter/Flutter.framework
+    rm -Rf ios/Flutter/Flutter.podspec
+    rm ios/Podfile
+    ;;
+
+  *)
+    echo -n "use watch, build or format"
+    ;;
+esac
