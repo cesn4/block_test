@@ -1,4 +1,5 @@
-import 'package:block_test/auth/auth_page_cubit/auth_cubit.dart';
+import 'package:block_test/auth/bloc/auth_bloc.dart';
+import 'package:block_test/auth/models/auth_view.dart';
 import 'package:block_test/widgets/buttons/basic_button.dart';
 import 'package:block_test/widgets/buttons/basic_icon_button.dart';
 import 'package:block_test/widgets/buttons/basic_text_button.dart';
@@ -70,8 +71,9 @@ class LoginView extends StatelessWidget with BaseExtension {
                     height: 40,
                   ),
                   BasicTextButton(
-                      onPressed: () =>
-                          context.read<AuthPageCubit>().navigateToRegister(),
+                      onPressed: () => context
+                          .read<AuthBloc>()
+                          .add(const AuthEvent.authViewChanged(AuthView.register)),
                       label: 'Sign up'),
                 ],
               )

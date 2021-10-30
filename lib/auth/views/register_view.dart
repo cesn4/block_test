@@ -1,4 +1,5 @@
-import 'package:block_test/auth/auth_page_cubit/auth_cubit.dart';
+import 'package:block_test/auth/bloc/auth_bloc.dart';
+import 'package:block_test/auth/models/auth_view.dart';
 import 'package:block_test/widgets/buttons/basic_button.dart';
 import 'package:block_test/widgets/buttons/basic_icon_button.dart';
 import 'package:block_test/widgets/buttons/basic_widget_button.dart';
@@ -34,8 +35,8 @@ class RegisterView extends StatelessWidget with BaseExtension {
                           color: colors(context).secondary,
                           size: 30,
                         ),
-                        onPressed: () =>
-                            context.read<AuthPageCubit>().navigateToLogin()),
+                        onPressed: () => context.read<AuthBloc>().add(
+                            const AuthEvent.authViewChanged(AuthView.login))),
                     BasicWidgetButton(
                         child: Image.asset('assets/icons/logo.png', height: 32),
                         onPressed: () => print('')),
