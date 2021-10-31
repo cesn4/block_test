@@ -1,5 +1,5 @@
-import 'package:cache/cache.dart';
 import 'package:test/test.dart';
+import '../lib/cache.dart';
 
 void main() {
   group('CacheClient', () {

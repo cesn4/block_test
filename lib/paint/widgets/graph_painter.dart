@@ -12,8 +12,8 @@ class GraphPainter extends CustomPainter {
       ..strokeCap = StrokeCap.round;
 
     //  Line Method 1 drawLine
-    Offset startingPoint = Offset(0 + padding, size.height / 2);
-    Offset endingPoint = Offset(size.width - padding, size.height / 2);
+    var startingPoint = Offset(0 + padding, size.height / 2);
+    var endingPoint = Offset(size.width - padding, size.height / 2);
     canvas.drawLine(startingPoint, endingPoint, paint);
   }
 
