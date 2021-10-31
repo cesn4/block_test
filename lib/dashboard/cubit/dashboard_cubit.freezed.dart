@@ -17,8 +17,11 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$DashboardStateTearOff {
   const _$DashboardStateTearOff();
 
-  _Initial initial() {
-    return const _Initial();
+  _DashboardState call(
+      {DashboardViewEnum currentView = DashboardViewEnum.person}) {
+    return _DashboardState(
+      currentView: currentView,
+    );
   }
 }
 
@@ -27,37 +30,10 @@ const $DashboardState = _$DashboardStateTearOff();
 
 /// @nodoc
 mixin _$DashboardState {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    required TResult orElse(),
-  }) =>
+  DashboardViewEnum get currentView => throw _privateConstructorUsedError;
+
+  @JsonKey(ignore: true)
+  $DashboardStateCopyWith<DashboardState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -66,6 +42,7 @@ abstract class $DashboardStateCopyWith<$Res> {
   factory $DashboardStateCopyWith(
           DashboardState value, $Res Function(DashboardState) then) =
       _$DashboardStateCopyWithImpl<$Res>;
+  $Res call({DashboardViewEnum currentView});
 }
 
 /// @nodoc
@@ -76,100 +53,94 @@ class _$DashboardStateCopyWithImpl<$Res>
   final DashboardState _value;
   // ignore: unused_field
   final $Res Function(DashboardState) _then;
-}
-
-/// @nodoc
-abstract class _$InitialCopyWith<$Res> {
-  factory _$InitialCopyWith(_Initial value, $Res Function(_Initial) then) =
-      __$InitialCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$InitialCopyWithImpl<$Res> extends _$DashboardStateCopyWithImpl<$Res>
-    implements _$InitialCopyWith<$Res> {
-  __$InitialCopyWithImpl(_Initial _value, $Res Function(_Initial) _then)
-      : super(_value, (v) => _then(v as _Initial));
 
   @override
-  _Initial get _value => super._value as _Initial;
+  $Res call({
+    Object? currentView = freezed,
+  }) {
+    return _then(_value.copyWith(
+      currentView: currentView == freezed
+          ? _value.currentView
+          : currentView // ignore: cast_nullable_to_non_nullable
+              as DashboardViewEnum,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$DashboardStateCopyWith<$Res>
+    implements $DashboardStateCopyWith<$Res> {
+  factory _$DashboardStateCopyWith(
+          _DashboardState value, $Res Function(_DashboardState) then) =
+      __$DashboardStateCopyWithImpl<$Res>;
+  @override
+  $Res call({DashboardViewEnum currentView});
+}
+
+/// @nodoc
+class __$DashboardStateCopyWithImpl<$Res>
+    extends _$DashboardStateCopyWithImpl<$Res>
+    implements _$DashboardStateCopyWith<$Res> {
+  __$DashboardStateCopyWithImpl(
+      _DashboardState _value, $Res Function(_DashboardState) _then)
+      : super(_value, (v) => _then(v as _DashboardState));
+
+  @override
+  _DashboardState get _value => super._value as _DashboardState;
+
+  @override
+  $Res call({
+    Object? currentView = freezed,
+  }) {
+    return _then(_DashboardState(
+      currentView: currentView == freezed
+          ? _value.currentView
+          : currentView // ignore: cast_nullable_to_non_nullable
+              as DashboardViewEnum,
+    ));
+  }
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$_DashboardState implements _DashboardState {
+  const _$_DashboardState({this.currentView = DashboardViewEnum.person});
+
+  @JsonKey(defaultValue: DashboardViewEnum.person)
+  @override
+  final DashboardViewEnum currentView;
 
   @override
   String toString() {
-    return 'DashboardState.initial()';
+    return 'DashboardState(currentView: $currentView)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _Initial);
+        (other.runtimeType == runtimeType &&
+            other is _DashboardState &&
+            (identical(other.currentView, currentView) ||
+                other.currentView == currentView));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode => Object.hash(runtimeType, currentView);
 
+  @JsonKey(ignore: true)
   @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-  }) {
-    return initial();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-  }) {
-    return initial?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    required TResult orElse(),
-  }) {
-    if (initial != null) {
-      return initial();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-  }) {
-    return initial(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-  }) {
-    return initial?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    required TResult orElse(),
-  }) {
-    if (initial != null) {
-      return initial(this);
-    }
-    return orElse();
-  }
+  _$DashboardStateCopyWith<_DashboardState> get copyWith =>
+      __$DashboardStateCopyWithImpl<_DashboardState>(this, _$identity);
 }
 
-abstract class _Initial implements DashboardState {
-  const factory _Initial() = _$_Initial;
+abstract class _DashboardState implements DashboardState {
+  const factory _DashboardState({DashboardViewEnum currentView}) =
+      _$_DashboardState;
+
+  @override
+  DashboardViewEnum get currentView;
+  @override
+  @JsonKey(ignore: true)
+  _$DashboardStateCopyWith<_DashboardState> get copyWith =>
+      throw _privateConstructorUsedError;
 }

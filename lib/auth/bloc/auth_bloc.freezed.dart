@@ -17,7 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 class _$AuthEventTearOff {
   const _$AuthEventTearOff();
 
-  _AuthViewChanged authViewChanged(AuthView view) {
+  _AuthViewChanged authViewChanged(AuthViewEnum view) {
     return _AuthViewChanged(
       view,
     );
@@ -81,7 +81,7 @@ const $AuthEvent = _$AuthEventTearOff();
 mixin _$AuthEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -96,7 +96,7 @@ mixin _$AuthEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -111,7 +111,7 @@ mixin _$AuthEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -205,7 +205,7 @@ abstract class _$AuthViewChangedCopyWith<$Res> {
   factory _$AuthViewChangedCopyWith(
           _AuthViewChanged value, $Res Function(_AuthViewChanged) then) =
       __$AuthViewChangedCopyWithImpl<$Res>;
-  $Res call({AuthView view});
+  $Res call({AuthViewEnum view});
 }
 
 /// @nodoc
@@ -226,7 +226,7 @@ class __$AuthViewChangedCopyWithImpl<$Res> extends _$AuthEventCopyWithImpl<$Res>
       view == freezed
           ? _value.view
           : view // ignore: cast_nullable_to_non_nullable
-              as AuthView,
+              as AuthViewEnum,
     ));
   }
 }
@@ -237,7 +237,7 @@ class _$_AuthViewChanged implements _AuthViewChanged {
   const _$_AuthViewChanged(this.view);
 
   @override
-  final AuthView view;
+  final AuthViewEnum view;
 
   @override
   String toString() {
@@ -263,7 +263,7 @@ class _$_AuthViewChanged implements _AuthViewChanged {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -281,7 +281,7 @@ class _$_AuthViewChanged implements _AuthViewChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -299,7 +299,7 @@ class _$_AuthViewChanged implements _AuthViewChanged {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -390,9 +390,9 @@ class _$_AuthViewChanged implements _AuthViewChanged {
 }
 
 abstract class _AuthViewChanged implements AuthEvent {
-  const factory _AuthViewChanged(AuthView view) = _$_AuthViewChanged;
+  const factory _AuthViewChanged(AuthViewEnum view) = _$_AuthViewChanged;
 
-  AuthView get view;
+  AuthViewEnum get view;
   @JsonKey(ignore: true)
   _$AuthViewChangedCopyWith<_AuthViewChanged> get copyWith =>
       throw _privateConstructorUsedError;
@@ -462,7 +462,7 @@ class _$_LoginEmailChanged implements _LoginEmailChanged {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -480,7 +480,7 @@ class _$_LoginEmailChanged implements _LoginEmailChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -498,7 +498,7 @@ class _$_LoginEmailChanged implements _LoginEmailChanged {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -638,7 +638,7 @@ class _$_LoginEmailUnfocused implements _LoginEmailUnfocused {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -656,7 +656,7 @@ class _$_LoginEmailUnfocused implements _LoginEmailUnfocused {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -674,7 +674,7 @@ class _$_LoginEmailUnfocused implements _LoginEmailUnfocused {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -834,7 +834,7 @@ class _$_LoginPasswordChanged implements _LoginPasswordChanged {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -852,7 +852,7 @@ class _$_LoginPasswordChanged implements _LoginPasswordChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -870,7 +870,7 @@ class _$_LoginPasswordChanged implements _LoginPasswordChanged {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1011,7 +1011,7 @@ class _$_LoginPasswordUnfocused implements _LoginPasswordUnfocused {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -1029,7 +1029,7 @@ class _$_LoginPasswordUnfocused implements _LoginPasswordUnfocused {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1047,7 +1047,7 @@ class _$_LoginPasswordUnfocused implements _LoginPasswordUnfocused {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1206,7 +1206,7 @@ class _$_RegisterEmailChanged implements _RegisterEmailChanged {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -1224,7 +1224,7 @@ class _$_RegisterEmailChanged implements _RegisterEmailChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1242,7 +1242,7 @@ class _$_RegisterEmailChanged implements _RegisterEmailChanged {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1382,7 +1382,7 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -1400,7 +1400,7 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1418,7 +1418,7 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1579,7 +1579,7 @@ class _$_RegisterPasswordChanged implements _RegisterPasswordChanged {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -1597,7 +1597,7 @@ class _$_RegisterPasswordChanged implements _RegisterPasswordChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1615,7 +1615,7 @@ class _$_RegisterPasswordChanged implements _RegisterPasswordChanged {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1758,7 +1758,7 @@ class _$_RegisterPasswordUnfocused implements _RegisterPasswordUnfocused {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -1776,7 +1776,7 @@ class _$_RegisterPasswordUnfocused implements _RegisterPasswordUnfocused {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1794,7 +1794,7 @@ class _$_RegisterPasswordUnfocused implements _RegisterPasswordUnfocused {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1956,7 +1956,7 @@ class _$_RegisterPassword_2Changed implements _RegisterPassword_2Changed {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -1974,7 +1974,7 @@ class _$_RegisterPassword_2Changed implements _RegisterPassword_2Changed {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -1992,7 +1992,7 @@ class _$_RegisterPassword_2Changed implements _RegisterPassword_2Changed {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -2137,7 +2137,7 @@ class _$_RegisterPassword_2Unfocused implements _RegisterPassword_2Unfocused {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(AuthView view) authViewChanged,
+    required TResult Function(AuthViewEnum view) authViewChanged,
     required TResult Function(String email) loginEmailChanged,
     required TResult Function() loginEmailUnfocused,
     required TResult Function(String password) loginPasswordChanged,
@@ -2155,7 +2155,7 @@ class _$_RegisterPassword_2Unfocused implements _RegisterPassword_2Unfocused {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -2173,7 +2173,7 @@ class _$_RegisterPassword_2Unfocused implements _RegisterPassword_2Unfocused {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AuthView view)? authViewChanged,
+    TResult Function(AuthViewEnum view)? authViewChanged,
     TResult Function(String email)? loginEmailChanged,
     TResult Function()? loginEmailUnfocused,
     TResult Function(String password)? loginPasswordChanged,
@@ -2272,7 +2272,7 @@ class _$AuthStateTearOff {
   const _$AuthStateTearOff();
 
   _AuthState call(
-      [AuthView authView = AuthView.login,
+      [AuthViewEnum authView = AuthViewEnum.login,
       Email loginEmail = const Email.pure(),
       Password loginPassword = const Password.pure(),
       FormzStatus loginStatus = FormzStatus.pure,
@@ -2298,7 +2298,7 @@ const $AuthState = _$AuthStateTearOff();
 
 /// @nodoc
 mixin _$AuthState {
-  AuthView get authView => throw _privateConstructorUsedError;
+  AuthViewEnum get authView => throw _privateConstructorUsedError;
   Email get loginEmail => throw _privateConstructorUsedError;
   Password get loginPassword => throw _privateConstructorUsedError;
   FormzStatus get loginStatus => throw _privateConstructorUsedError;
@@ -2317,7 +2317,7 @@ abstract class $AuthStateCopyWith<$Res> {
   factory $AuthStateCopyWith(AuthState value, $Res Function(AuthState) then) =
       _$AuthStateCopyWithImpl<$Res>;
   $Res call(
-      {AuthView authView,
+      {AuthViewEnum authView,
       Email loginEmail,
       Password loginPassword,
       FormzStatus loginStatus,
@@ -2350,7 +2350,7 @@ class _$AuthStateCopyWithImpl<$Res> implements $AuthStateCopyWith<$Res> {
       authView: authView == freezed
           ? _value.authView
           : authView // ignore: cast_nullable_to_non_nullable
-              as AuthView,
+              as AuthViewEnum,
       loginEmail: loginEmail == freezed
           ? _value.loginEmail
           : loginEmail // ignore: cast_nullable_to_non_nullable
@@ -2390,7 +2390,7 @@ abstract class _$AuthStateCopyWith<$Res> implements $AuthStateCopyWith<$Res> {
       __$AuthStateCopyWithImpl<$Res>;
   @override
   $Res call(
-      {AuthView authView,
+      {AuthViewEnum authView,
       Email loginEmail,
       Password loginPassword,
       FormzStatus loginStatus,
@@ -2424,7 +2424,7 @@ class __$AuthStateCopyWithImpl<$Res> extends _$AuthStateCopyWithImpl<$Res>
       authView == freezed
           ? _value.authView
           : authView // ignore: cast_nullable_to_non_nullable
-              as AuthView,
+              as AuthViewEnum,
       loginEmail == freezed
           ? _value.loginEmail
           : loginEmail // ignore: cast_nullable_to_non_nullable
@@ -2461,7 +2461,7 @@ class __$AuthStateCopyWithImpl<$Res> extends _$AuthStateCopyWithImpl<$Res>
 
 class _$_AuthState implements _AuthState {
   const _$_AuthState(
-      [this.authView = AuthView.login,
+      [this.authView = AuthViewEnum.login,
       this.loginEmail = const Email.pure(),
       this.loginPassword = const Password.pure(),
       this.loginStatus = FormzStatus.pure,
@@ -2470,9 +2470,9 @@ class _$_AuthState implements _AuthState {
       this.registerPassword_2 = const Password.pure(),
       this.registerStatus = FormzStatus.pure]);
 
-  @JsonKey(defaultValue: AuthView.login)
+  @JsonKey(defaultValue: AuthViewEnum.login)
   @override
-  final AuthView authView;
+  final AuthViewEnum authView;
   @JsonKey(defaultValue: const Email.pure())
   @override
   final Email loginEmail;
@@ -2543,7 +2543,7 @@ class _$_AuthState implements _AuthState {
 
 abstract class _AuthState implements AuthState {
   const factory _AuthState(
-      [AuthView authView,
+      [AuthViewEnum authView,
       Email loginEmail,
       Password loginPassword,
       FormzStatus loginStatus,
@@ -2553,7 +2553,7 @@ abstract class _AuthState implements AuthState {
       FormzStatus registerStatus]) = _$_AuthState;
 
   @override
-  AuthView get authView;
+  AuthViewEnum get authView;
   @override
   Email get loginEmail;
   @override
