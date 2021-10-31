@@ -3,7 +3,7 @@ part of 'auth_bloc.dart';
 @freezed
 class AuthState with _$AuthState {
   const factory AuthState([
-    @Default(AuthView.login) AuthView authView,
+    @Default(AuthViewEnum.login) AuthViewEnum authView,
     @Default(Email.pure()) Email loginEmail,
     @Default(Password.pure()) Password loginPassword,
     @Default(FormzStatus.pure) FormzStatus loginStatus,

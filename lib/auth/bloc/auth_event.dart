@@ -2,7 +2,7 @@ part of 'auth_bloc.dart';
 
 @freezed
 class AuthEvent with _$AuthEvent {
-  const factory AuthEvent.authViewChanged(AuthView view) = _AuthViewChanged;
+  const factory AuthEvent.authViewChanged(AuthViewEnum view) = _AuthViewChanged;
   const factory AuthEvent.loginEmailChanged(String email) = _LoginEmailChanged;
   const factory AuthEvent.loginEmailUnfocused() = _LoginEmailUnfocused;
   const factory AuthEvent.loginPasswordChanged(String password) =

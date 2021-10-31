@@ -17,16 +17,27 @@ mixin BaseExtension {
     return mediaQuery.size.width;
   }
 
+  void replaceWith(BuildContext context, Widget page) {
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(builder: (context) => page),
+    );
+  }
+
+  void navigateTo(BuildContext context, Widget page) {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (context) => page),
+    );
+  }
+
   void showSnackBar(BuildContext context, String message) {
-    final colorScheme = Theme.of(context).colorScheme;
     final snackBar = SnackBar(
-      backgroundColor: colorScheme.secondary,
+      backgroundColor: colors(context).secondary,
       padding: const EdgeInsets.all(20),
       content: Text(
         message,
         textAlign: TextAlign.center,
         style: TextStyle(
-          color: colorScheme.primary,
+          color: colors(context).primary,
           fontSize: 14,
           fontWeight: FontWeight.bold,
         ),

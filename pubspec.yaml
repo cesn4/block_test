@@ -25,10 +25,10 @@ dependencies:
   json_annotation: ^4.0.1
   equatable: ^2.0.0
 
-  authentication_repository:
-    path: packages/authentication_repository
-  form_inputs:
-    path: packages/form_inputs
+  # authentication_repository:
+  #   path: packages/authentication_repository
+  # form_inputs:
+  #   path: packages/form_inputs
 
 dev_dependencies:
   bloc_test: ^8.0.0

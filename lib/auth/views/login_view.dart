@@ -3,12 +3,15 @@ import 'package:block_test/auth/models/auth_view.dart';
 import 'package:block_test/auth/widgets/login_email_input.dart';
 import 'package:block_test/auth/widgets/login_password_input.dart';
 import 'package:block_test/auth/widgets/social_auth_section.dart';
+import 'package:block_test/counter/counter_page.dart';
+import 'package:block_test/dashboard/dashboard_page.dart';
 import 'package:block_test/widgets/buttons/basic_button.dart';
 import 'package:block_test/widgets/buttons/basic_text_button.dart';
 import 'package:block_test/widgets/extensions/base_extension.dart';
 import 'package:block_test/widgets/layout/main_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:formz/formz.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -68,13 +71,23 @@ class _LoginViewState extends State<LoginView> with BaseExtension {
               Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  BasicButton(onPressed: () {}, label: 'Log In'),
+                  BlocBuilder<AuthBloc, AuthState>(
+                    builder: (context, state) {
+                      return BasicButton(
+                          onPressed: () => state.loginStatus ==
+                                  FormzStatus.valid
+                              ? replaceWith(context, DahboardPage())
+                              : showSnackBar(
+                                  context, 'Your credentials is not valid!'),
+                          label: 'Log In');
+                    },
+                  ),
                   const SizedBox(
                     height: 40,
                   ),
                   BasicTextButton(
                       onPressed: () => context.read<AuthBloc>().add(
-                          const AuthEvent.authViewChanged(AuthView.register)),
+                          const AuthEvent.authViewChanged(AuthViewEnum.register)),
                       label: 'Sign up'),
                 ],
               )

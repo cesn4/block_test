@@ -49,7 +49,7 @@ class _$AuthEventTearOff {
     );
   }
 
-  _RegisterEmailUnfocused registerEmaildUnfocused() {
+  _RegisterEmailUnfocused registerEmailUnfocused() {
     return const _RegisterEmailUnfocused();
   }
 
@@ -87,7 +87,7 @@ mixin _$AuthEvent {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -102,7 +102,7 @@ mixin _$AuthEvent {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -117,7 +117,7 @@ mixin _$AuthEvent {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -135,7 +135,7 @@ mixin _$AuthEvent {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -154,7 +154,7 @@ mixin _$AuthEvent {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -172,7 +172,7 @@ mixin _$AuthEvent {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -269,7 +269,7 @@ class _$_AuthViewChanged implements _AuthViewChanged {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -287,7 +287,7 @@ class _$_AuthViewChanged implements _AuthViewChanged {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -305,7 +305,7 @@ class _$_AuthViewChanged implements _AuthViewChanged {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -329,7 +329,7 @@ class _$_AuthViewChanged implements _AuthViewChanged {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -351,7 +351,7 @@ class _$_AuthViewChanged implements _AuthViewChanged {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -372,7 +372,7 @@ class _$_AuthViewChanged implements _AuthViewChanged {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -468,7 +468,7 @@ class _$_LoginEmailChanged implements _LoginEmailChanged {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -486,7 +486,7 @@ class _$_LoginEmailChanged implements _LoginEmailChanged {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -504,7 +504,7 @@ class _$_LoginEmailChanged implements _LoginEmailChanged {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -528,7 +528,7 @@ class _$_LoginEmailChanged implements _LoginEmailChanged {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -550,7 +550,7 @@ class _$_LoginEmailChanged implements _LoginEmailChanged {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -571,7 +571,7 @@ class _$_LoginEmailChanged implements _LoginEmailChanged {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -644,7 +644,7 @@ class _$_LoginEmailUnfocused implements _LoginEmailUnfocused {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -662,7 +662,7 @@ class _$_LoginEmailUnfocused implements _LoginEmailUnfocused {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -680,7 +680,7 @@ class _$_LoginEmailUnfocused implements _LoginEmailUnfocused {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -704,7 +704,7 @@ class _$_LoginEmailUnfocused implements _LoginEmailUnfocused {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -726,7 +726,7 @@ class _$_LoginEmailUnfocused implements _LoginEmailUnfocused {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -747,7 +747,7 @@ class _$_LoginEmailUnfocused implements _LoginEmailUnfocused {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -840,7 +840,7 @@ class _$_LoginPasswordChanged implements _LoginPasswordChanged {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -858,7 +858,7 @@ class _$_LoginPasswordChanged implements _LoginPasswordChanged {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -876,7 +876,7 @@ class _$_LoginPasswordChanged implements _LoginPasswordChanged {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -900,7 +900,7 @@ class _$_LoginPasswordChanged implements _LoginPasswordChanged {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -922,7 +922,7 @@ class _$_LoginPasswordChanged implements _LoginPasswordChanged {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -943,7 +943,7 @@ class _$_LoginPasswordChanged implements _LoginPasswordChanged {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1017,7 +1017,7 @@ class _$_LoginPasswordUnfocused implements _LoginPasswordUnfocused {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -1035,7 +1035,7 @@ class _$_LoginPasswordUnfocused implements _LoginPasswordUnfocused {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -1053,7 +1053,7 @@ class _$_LoginPasswordUnfocused implements _LoginPasswordUnfocused {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -1077,7 +1077,7 @@ class _$_LoginPasswordUnfocused implements _LoginPasswordUnfocused {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -1099,7 +1099,7 @@ class _$_LoginPasswordUnfocused implements _LoginPasswordUnfocused {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1120,7 +1120,7 @@ class _$_LoginPasswordUnfocused implements _LoginPasswordUnfocused {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1212,7 +1212,7 @@ class _$_RegisterEmailChanged implements _RegisterEmailChanged {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -1230,7 +1230,7 @@ class _$_RegisterEmailChanged implements _RegisterEmailChanged {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -1248,7 +1248,7 @@ class _$_RegisterEmailChanged implements _RegisterEmailChanged {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -1272,7 +1272,7 @@ class _$_RegisterEmailChanged implements _RegisterEmailChanged {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -1294,7 +1294,7 @@ class _$_RegisterEmailChanged implements _RegisterEmailChanged {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1315,7 +1315,7 @@ class _$_RegisterEmailChanged implements _RegisterEmailChanged {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1367,7 +1367,7 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
 
   @override
   String toString() {
-    return 'AuthEvent.registerEmaildUnfocused()';
+    return 'AuthEvent.registerEmailUnfocused()';
   }
 
   @override
@@ -1388,13 +1388,13 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
     required TResult Function() registerPassword_2Unfocused,
   }) {
-    return registerEmaildUnfocused();
+    return registerEmailUnfocused();
   }
 
   @override
@@ -1406,13 +1406,13 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
     TResult Function()? registerPassword_2Unfocused,
   }) {
-    return registerEmaildUnfocused?.call();
+    return registerEmailUnfocused?.call();
   }
 
   @override
@@ -1424,15 +1424,15 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
     TResult Function()? registerPassword_2Unfocused,
     required TResult orElse(),
   }) {
-    if (registerEmaildUnfocused != null) {
-      return registerEmaildUnfocused();
+    if (registerEmailUnfocused != null) {
+      return registerEmailUnfocused();
     }
     return orElse();
   }
@@ -1448,7 +1448,7 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -1458,7 +1458,7 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
     required TResult Function(_RegisterPassword_2Unfocused value)
         registerPassword_2Unfocused,
   }) {
-    return registerEmaildUnfocused(this);
+    return registerEmailUnfocused(this);
   }
 
   @override
@@ -1470,7 +1470,7 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1479,7 +1479,7 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
     TResult Function(_RegisterPassword_2Unfocused value)?
         registerPassword_2Unfocused,
   }) {
-    return registerEmaildUnfocused?.call(this);
+    return registerEmailUnfocused?.call(this);
   }
 
   @override
@@ -1491,7 +1491,7 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1501,8 +1501,8 @@ class _$_RegisterEmailUnfocused implements _RegisterEmailUnfocused {
         registerPassword_2Unfocused,
     required TResult orElse(),
   }) {
-    if (registerEmaildUnfocused != null) {
-      return registerEmaildUnfocused(this);
+    if (registerEmailUnfocused != null) {
+      return registerEmailUnfocused(this);
     }
     return orElse();
   }
@@ -1585,7 +1585,7 @@ class _$_RegisterPasswordChanged implements _RegisterPasswordChanged {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -1603,7 +1603,7 @@ class _$_RegisterPasswordChanged implements _RegisterPasswordChanged {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -1621,7 +1621,7 @@ class _$_RegisterPasswordChanged implements _RegisterPasswordChanged {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -1645,7 +1645,7 @@ class _$_RegisterPasswordChanged implements _RegisterPasswordChanged {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -1667,7 +1667,7 @@ class _$_RegisterPasswordChanged implements _RegisterPasswordChanged {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1688,7 +1688,7 @@ class _$_RegisterPasswordChanged implements _RegisterPasswordChanged {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1764,7 +1764,7 @@ class _$_RegisterPasswordUnfocused implements _RegisterPasswordUnfocused {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -1782,7 +1782,7 @@ class _$_RegisterPasswordUnfocused implements _RegisterPasswordUnfocused {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -1800,7 +1800,7 @@ class _$_RegisterPasswordUnfocused implements _RegisterPasswordUnfocused {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -1824,7 +1824,7 @@ class _$_RegisterPasswordUnfocused implements _RegisterPasswordUnfocused {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -1846,7 +1846,7 @@ class _$_RegisterPasswordUnfocused implements _RegisterPasswordUnfocused {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1867,7 +1867,7 @@ class _$_RegisterPasswordUnfocused implements _RegisterPasswordUnfocused {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -1962,7 +1962,7 @@ class _$_RegisterPassword_2Changed implements _RegisterPassword_2Changed {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -1980,7 +1980,7 @@ class _$_RegisterPassword_2Changed implements _RegisterPassword_2Changed {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -1998,7 +1998,7 @@ class _$_RegisterPassword_2Changed implements _RegisterPassword_2Changed {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -2022,7 +2022,7 @@ class _$_RegisterPassword_2Changed implements _RegisterPassword_2Changed {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -2044,7 +2044,7 @@ class _$_RegisterPassword_2Changed implements _RegisterPassword_2Changed {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -2065,7 +2065,7 @@ class _$_RegisterPassword_2Changed implements _RegisterPassword_2Changed {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -2143,7 +2143,7 @@ class _$_RegisterPassword_2Unfocused implements _RegisterPassword_2Unfocused {
     required TResult Function(String password) loginPasswordChanged,
     required TResult Function() loginPasswordUnfocused,
     required TResult Function(String email) registerEmailChanged,
-    required TResult Function() registerEmaildUnfocused,
+    required TResult Function() registerEmailUnfocused,
     required TResult Function(String password) registerPasswordChanged,
     required TResult Function() registerPasswordUnfocused,
     required TResult Function(String password) registerPassword_2Changed,
@@ -2161,7 +2161,7 @@ class _$_RegisterPassword_2Unfocused implements _RegisterPassword_2Unfocused {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -2179,7 +2179,7 @@ class _$_RegisterPassword_2Unfocused implements _RegisterPassword_2Unfocused {
     TResult Function(String password)? loginPasswordChanged,
     TResult Function()? loginPasswordUnfocused,
     TResult Function(String email)? registerEmailChanged,
-    TResult Function()? registerEmaildUnfocused,
+    TResult Function()? registerEmailUnfocused,
     TResult Function(String password)? registerPasswordChanged,
     TResult Function()? registerPasswordUnfocused,
     TResult Function(String password)? registerPassword_2Changed,
@@ -2203,7 +2203,7 @@ class _$_RegisterPassword_2Unfocused implements _RegisterPassword_2Unfocused {
         loginPasswordUnfocused,
     required TResult Function(_RegisterEmailChanged value) registerEmailChanged,
     required TResult Function(_RegisterEmailUnfocused value)
-        registerEmaildUnfocused,
+        registerEmailUnfocused,
     required TResult Function(_RegisterPasswordChanged value)
         registerPasswordChanged,
     required TResult Function(_RegisterPasswordUnfocused value)
@@ -2225,7 +2225,7 @@ class _$_RegisterPassword_2Unfocused implements _RegisterPassword_2Unfocused {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,
@@ -2246,7 +2246,7 @@ class _$_RegisterPassword_2Unfocused implements _RegisterPassword_2Unfocused {
     TResult Function(_LoginPasswordChanged value)? loginPasswordChanged,
     TResult Function(_LoginPasswordUnfocused value)? loginPasswordUnfocused,
     TResult Function(_RegisterEmailChanged value)? registerEmailChanged,
-    TResult Function(_RegisterEmailUnfocused value)? registerEmaildUnfocused,
+    TResult Function(_RegisterEmailUnfocused value)? registerEmailUnfocused,
     TResult Function(_RegisterPasswordChanged value)? registerPasswordChanged,
     TResult Function(_RegisterPasswordUnfocused value)?
         registerPasswordUnfocused,

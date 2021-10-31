@@ -1,1 +1,1 @@
-enum AuthView { login, register }
+enum AuthViewEnum { login, register }

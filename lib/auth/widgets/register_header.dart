@@ -27,7 +27,7 @@ class RegisterHeader extends StatelessWidget with BaseExtension {
               ),
               onPressed: () => context
                   .read<AuthBloc>()
-                  .add(const AuthEvent.authViewChanged(AuthView.login))),
+                  .add(const AuthEvent.authViewChanged(AuthViewEnum.login))),
           BasicWidgetButton(
               child: Image.asset('assets/icons/logo.png', height: 32),
               onPressed: () => print('')),

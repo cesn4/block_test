@@ -13,13 +13,13 @@ class AuthPage extends StatelessWidget with BaseExtension {
 
   @override
   Widget build(BuildContext context) {
-    Widget _buildView(AuthView view) {
+    Widget _buildView(AuthViewEnum view) {
       switch (view) {
-        case AuthView.login:
+        case AuthViewEnum.login:
           return const LoginView(
             key: Key('LoginView'),
           );
-        case AuthView.register:
+        case AuthViewEnum.register:
           return const RegisterView(
             key: Key('RegisterView'),
           );
@@ -31,7 +31,9 @@ class AuthPage extends StatelessWidget with BaseExtension {
         BlocProvider(create: (context) => AuthBloc()),
       ],
       child: BlocConsumer<AuthBloc, AuthState>(
-        listener: (context, state) {},
+        listener: (context, state) {
+          print(state.loginStatus);
+        },
         builder: (context, state) {
           return PageTransitionSwitcher(
             duration: const Duration(milliseconds: 2000),
