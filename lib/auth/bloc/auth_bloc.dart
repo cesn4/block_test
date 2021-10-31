@@ -40,6 +40,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
 
   void _onLoginEmailUnfocused(
       _LoginEmailUnfocused event, Emitter<AuthState> emit) {
+    print('Hello');
     final email = Email.dirty(state.loginEmail.value);
     emit(state.copyWith(
       loginEmail: email,

@@ -30,7 +30,8 @@ class AuthPage extends StatelessWidget with BaseExtension {
       providers: [
         BlocProvider(create: (context) => AuthBloc()),
       ],
-      child: BlocBuilder<AuthBloc, AuthState>(
+      child: BlocConsumer<AuthBloc, AuthState>(
+        listener: (context, state) {},
         builder: (context, state) {
           return PageTransitionSwitcher(
             duration: const Duration(milliseconds: 2000),

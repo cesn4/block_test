@@ -18,6 +18,7 @@ class RegisterPasswordInput extends StatelessWidget {
             label: 'password',
             obscureText: true,
             initialValue: state.registerPassword.value,
+            focusNode: focusNode,
             textInputAction: TextInputAction.next,
             onChanged: (value) {
               context

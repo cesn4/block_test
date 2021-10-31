@@ -7,6 +7,7 @@ class BasicTextField extends StatelessWidget with BaseExtension {
   final String? errorText;
   final String? initialValue;
   final bool obscureText;
+  final FocusNode? focusNode;
   final TextInputAction? textInputAction;
   const BasicTextField({
     Key? key,
@@ -16,13 +17,15 @@ class BasicTextField extends StatelessWidget with BaseExtension {
     required this.initialValue,
     this.obscureText = false,
     this.textInputAction,
+    this.focusNode,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      obscureText: false,
+      obscureText: obscureText,
       initialValue: initialValue,
+      focusNode: focusNode,
       style: TextStyle(color: colors(context).secondary, fontSize: 24),
       onChanged: onChanged,
       textInputAction: textInputAction,

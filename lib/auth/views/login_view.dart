@@ -4,10 +4,8 @@ import 'package:block_test/auth/widgets/login_email_input.dart';
 import 'package:block_test/auth/widgets/login_password_input.dart';
 import 'package:block_test/auth/widgets/social_auth_section.dart';
 import 'package:block_test/widgets/buttons/basic_button.dart';
-import 'package:block_test/widgets/buttons/basic_icon_button.dart';
 import 'package:block_test/widgets/buttons/basic_text_button.dart';
 import 'package:block_test/widgets/extensions/base_extension.dart';
-import 'package:block_test/widgets/inputs/basic_text_field.dart';
 import 'package:block_test/widgets/layout/main_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -28,6 +26,7 @@ class _LoginViewState extends State<LoginView> with BaseExtension {
     super.initState();
     _emailFocusNode.addListener(() {
       if (!_emailFocusNode.hasFocus) {
+        print('Hello');
         context.read<AuthBloc>().add(const AuthEvent.loginEmailUnfocused());
         FocusScope.of(context).requestFocus(_passwordFocusNode);
       }

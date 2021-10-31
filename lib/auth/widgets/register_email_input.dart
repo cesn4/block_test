@@ -17,6 +17,7 @@ class RegisterEmailInput extends StatelessWidget {
           child: BasicTextField(
             label: 'email',
             initialValue: state.registerEmail.value,
+            focusNode: focusNode,
             onChanged: (value) {
               context
                   .read<AuthBloc>()

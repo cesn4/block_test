@@ -17,6 +17,7 @@ class LoginPasswordInput extends StatelessWidget {
           child: BasicTextField(
             label: 'password',
             obscureText: true,
+            focusNode: focusNode,
             initialValue: state.loginPassword.value,
             textInputAction: TextInputAction.done,
             onChanged: (value) {

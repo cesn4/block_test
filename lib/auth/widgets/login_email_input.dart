@@ -12,10 +12,11 @@ class LoginEmailInput extends StatelessWidget {
     return BlocBuilder<AuthBloc, AuthState>(
       builder: (context, state) {
         return Padding(
-          padding: const EdgeInsets.only(bottom: 5),
+          padding: const EdgeInsets.only(bottom: 0),
           child: BasicTextField(
             label: 'email',
             initialValue: state.loginEmail.value,
+            focusNode: focusNode,
             onChanged: (value) {
               context.read<AuthBloc>().add(AuthEvent.loginEmailChanged(value));
             },

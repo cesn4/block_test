@@ -3,6 +3,7 @@ import 'package:block_test/auth/models/auth_view.dart';
 import 'package:block_test/auth/widgets/register_email_input.dart';
 import 'package:block_test/auth/widgets/register_header.dart';
 import 'package:block_test/auth/widgets/register_password_2_input.dart';
+import 'package:block_test/auth/widgets/register_password_input.dart';
 import 'package:block_test/auth/widgets/social_auth_section.dart';
 import 'package:block_test/widgets/buttons/basic_button.dart';
 import 'package:block_test/widgets/buttons/basic_icon_button.dart';
@@ -42,7 +43,7 @@ class _RegisterViewState extends State<RegisterView> with BaseExtension {
       }
     });
     _password_2FocusNode.addListener(() {
-      if (!_passwordFocusNode.hasFocus) {
+      if (!_password_2FocusNode.hasFocus) {
         context
             .read<AuthBloc>()
             .add(const AuthEvent.registerPassword_2Unfocused());
@@ -75,7 +76,7 @@ class _RegisterViewState extends State<RegisterView> with BaseExtension {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     RegisterEmailInput(focusNode: _emailFocusNode),
-                    RegisterPassword2Input(focusNode: _passwordFocusNode),
+                    RegisterPasswordInput(focusNode: _passwordFocusNode),
                     RegisterPassword2Input(focusNode: _password_2FocusNode),
                     const SocialAuthSection(),
                   ],
