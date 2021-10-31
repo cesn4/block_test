@@ -18,15 +18,23 @@ dependencies:
   flutter_bloc: ^7.3.0
 
   formz: ^0.4.0
+  very_good_analysis: ^2.3.0
 
   # Data models
   freezed_annotation: ^0.15.0
   json_annotation: ^4.0.1
   equatable: ^2.0.0
 
+  authentication_repository:
+    path: packages/authentication_repository
+  form_inputs:
+    path: packages/form_inputs
+
 dev_dependencies:
+  bloc_test: ^8.0.0
   flutter_test:
     sdk: flutter
+  mocktail: ^0.2.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
