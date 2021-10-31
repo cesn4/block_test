@@ -1,5 +1,9 @@
 import 'package:block_test/auth/bloc/auth_bloc.dart';
 import 'package:block_test/auth/models/auth_view.dart';
+import 'package:block_test/auth/widgets/register_email_input.dart';
+import 'package:block_test/auth/widgets/register_header.dart';
+import 'package:block_test/auth/widgets/register_password_2_input.dart';
+import 'package:block_test/auth/widgets/social_auth_section.dart';
 import 'package:block_test/widgets/buttons/basic_button.dart';
 import 'package:block_test/widgets/buttons/basic_icon_button.dart';
 import 'package:block_test/widgets/buttons/basic_widget_button.dart';
@@ -9,8 +13,50 @@ import 'package:block_test/widgets/layout/main_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class RegisterView extends StatelessWidget with BaseExtension {
+class RegisterView extends StatefulWidget with BaseExtension {
   const RegisterView({Key? key}) : super(key: key);
+
+  @override
+  State<RegisterView> createState() => _RegisterViewState();
+}
+
+class _RegisterViewState extends State<RegisterView> with BaseExtension {
+  final _emailFocusNode = FocusNode();
+  final _passwordFocusNode = FocusNode();
+  final _password_2FocusNode = FocusNode();
+
+  @override
+  void initState() {
+    super.initState();
+    _emailFocusNode.addListener(() {
+      if (!_emailFocusNode.hasFocus) {
+        context.read<AuthBloc>().add(const AuthEvent.registerEmailUnfocused());
+        FocusScope.of(context).requestFocus(_passwordFocusNode);
+      }
+    });
+    _passwordFocusNode.addListener(() {
+      if (!_passwordFocusNode.hasFocus) {
+        context
+            .read<AuthBloc>()
+            .add(const AuthEvent.registerPasswordUnfocused());
+      }
+    });
+    _password_2FocusNode.addListener(() {
+      if (!_passwordFocusNode.hasFocus) {
+        context
+            .read<AuthBloc>()
+            .add(const AuthEvent.registerPassword_2Unfocused());
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _emailFocusNode.dispose();
+    _passwordFocusNode.dispose();
+    _password_2FocusNode.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,83 +68,16 @@ class RegisterView extends StatelessWidget with BaseExtension {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 15),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    BasicWidgetButton(
-                        child: Icon(
-                          Icons.arrow_back_ios,
-                          color: colors(context).secondary,
-                          size: 30,
-                        ),
-                        onPressed: () => context.read<AuthBloc>().add(
-                            const AuthEvent.authViewChanged(AuthView.login))),
-                    BasicWidgetButton(
-                        child: Image.asset('assets/icons/logo.png', height: 32),
-                        onPressed: () => print('')),
-                  ],
-                ),
-              ),
+              const RegisterHeader(),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 40),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    BasicTextField(
-                      label: 'name',
-                      onChanged: (e) => print(e),
-                      errorText: null,
-                    ),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    BasicTextField(
-                      label: 'email',
-                      onChanged: (e) => print(e),
-                      errorText: null,
-                      obscureText: true,
-                    ),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    BasicTextField(
-                      label: 'password',
-                      onChanged: (e) => print(e),
-                      errorText: null,
-                    ),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    BasicTextField(
-                      label: 're-password',
-                      onChanged: (e) => print(e),
-                      errorText: null,
-                      obscureText: true,
-                    ),
-                    const SizedBox(
-                      height: 40,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        BasicIconButton(
-                          icon: Icons.facebook,
-                          onPressed: () => print("facebook"),
-                        ),
-                        BasicIconButton(
-                          icon: Icons.gamepad,
-                          onPressed: () => print("google"),
-                        ),
-                        BasicIconButton(
-                          icon: Icons.touch_app_rounded,
-                          onPressed: () => print("apple"),
-                        ),
-                      ],
-                    ),
+                    RegisterEmailInput(focusNode: _emailFocusNode),
+                    RegisterPassword2Input(focusNode: _passwordFocusNode),
+                    RegisterPassword2Input(focusNode: _password_2FocusNode),
+                    const SocialAuthSection(),
                   ],
                 ),
               ),

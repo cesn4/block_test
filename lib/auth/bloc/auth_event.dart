@@ -11,7 +11,7 @@ class AuthEvent with _$AuthEvent {
       _LoginPasswordUnfocused;
   const factory AuthEvent.registerEmailChanged(String email) =
       _RegisterEmailChanged;
-  const factory AuthEvent.registerEmaildUnfocused() =
+  const factory AuthEvent.registerEmailUnfocused() =
       _RegisterEmailUnfocused;
   const factory AuthEvent.registerPasswordChanged(String password) =
       _RegisterPasswordChanged;
