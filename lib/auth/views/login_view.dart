@@ -76,7 +76,7 @@ class _LoginViewState extends State<LoginView> with BaseExtension {
                       return BasicButton(
                           onPressed: () => state.loginStatus ==
                                   FormzStatus.valid
-                              ? replaceWith(context, DahboardPage())
+                              ? replaceWith(context, DashboardPage())
                               : showSnackBar(
                                   context, 'Your credentials is not valid!'),
                           label: 'Log In');
@@ -87,7 +87,8 @@ class _LoginViewState extends State<LoginView> with BaseExtension {
                   ),
                   BasicTextButton(
                       onPressed: () => context.read<AuthBloc>().add(
-                          const AuthEvent.authViewChanged(AuthViewEnum.register)),
+                          const AuthEvent.authViewChanged(
+                              AuthViewEnum.register)),
                       label: 'Sign up'),
                 ],
               )

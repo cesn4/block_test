@@ -18,9 +18,19 @@ class _$DashboardStateTearOff {
   const _$DashboardStateTearOff();
 
   _DashboardState call(
-      {DashboardViewEnum currentView = DashboardViewEnum.person}) {
+      {DashboardViewEnum currentView = DashboardViewEnum.person,
+      required TabController controller,
+      String? title,
+      String? quote,
+      bool isLoading = false,
+      bool hasError = false}) {
     return _DashboardState(
       currentView: currentView,
+      controller: controller,
+      title: title,
+      quote: quote,
+      isLoading: isLoading,
+      hasError: hasError,
     );
   }
 }
@@ -31,6 +41,11 @@ const $DashboardState = _$DashboardStateTearOff();
 /// @nodoc
 mixin _$DashboardState {
   DashboardViewEnum get currentView => throw _privateConstructorUsedError;
+  TabController get controller => throw _privateConstructorUsedError;
+  String? get title => throw _privateConstructorUsedError;
+  String? get quote => throw _privateConstructorUsedError;
+  bool get isLoading => throw _privateConstructorUsedError;
+  bool get hasError => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $DashboardStateCopyWith<DashboardState> get copyWith =>
@@ -42,7 +57,13 @@ abstract class $DashboardStateCopyWith<$Res> {
   factory $DashboardStateCopyWith(
           DashboardState value, $Res Function(DashboardState) then) =
       _$DashboardStateCopyWithImpl<$Res>;
-  $Res call({DashboardViewEnum currentView});
+  $Res call(
+      {DashboardViewEnum currentView,
+      TabController controller,
+      String? title,
+      String? quote,
+      bool isLoading,
+      bool hasError});
 }
 
 /// @nodoc
@@ -57,12 +78,37 @@ class _$DashboardStateCopyWithImpl<$Res>
   @override
   $Res call({
     Object? currentView = freezed,
+    Object? controller = freezed,
+    Object? title = freezed,
+    Object? quote = freezed,
+    Object? isLoading = freezed,
+    Object? hasError = freezed,
   }) {
     return _then(_value.copyWith(
       currentView: currentView == freezed
           ? _value.currentView
           : currentView // ignore: cast_nullable_to_non_nullable
               as DashboardViewEnum,
+      controller: controller == freezed
+          ? _value.controller
+          : controller // ignore: cast_nullable_to_non_nullable
+              as TabController,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      quote: quote == freezed
+          ? _value.quote
+          : quote // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isLoading: isLoading == freezed
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      hasError: hasError == freezed
+          ? _value.hasError
+          : hasError // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -74,7 +120,13 @@ abstract class _$DashboardStateCopyWith<$Res>
           _DashboardState value, $Res Function(_DashboardState) then) =
       __$DashboardStateCopyWithImpl<$Res>;
   @override
-  $Res call({DashboardViewEnum currentView});
+  $Res call(
+      {DashboardViewEnum currentView,
+      TabController controller,
+      String? title,
+      String? quote,
+      bool isLoading,
+      bool hasError});
 }
 
 /// @nodoc
@@ -91,12 +143,37 @@ class __$DashboardStateCopyWithImpl<$Res>
   @override
   $Res call({
     Object? currentView = freezed,
+    Object? controller = freezed,
+    Object? title = freezed,
+    Object? quote = freezed,
+    Object? isLoading = freezed,
+    Object? hasError = freezed,
   }) {
     return _then(_DashboardState(
       currentView: currentView == freezed
           ? _value.currentView
           : currentView // ignore: cast_nullable_to_non_nullable
               as DashboardViewEnum,
+      controller: controller == freezed
+          ? _value.controller
+          : controller // ignore: cast_nullable_to_non_nullable
+              as TabController,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+      quote: quote == freezed
+          ? _value.quote
+          : quote // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isLoading: isLoading == freezed
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      hasError: hasError == freezed
+          ? _value.hasError
+          : hasError // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -104,15 +181,33 @@ class __$DashboardStateCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_DashboardState implements _DashboardState {
-  const _$_DashboardState({this.currentView = DashboardViewEnum.person});
+  const _$_DashboardState(
+      {this.currentView = DashboardViewEnum.person,
+      required this.controller,
+      this.title,
+      this.quote,
+      this.isLoading = false,
+      this.hasError = false});
 
   @JsonKey(defaultValue: DashboardViewEnum.person)
   @override
   final DashboardViewEnum currentView;
+  @override
+  final TabController controller;
+  @override
+  final String? title;
+  @override
+  final String? quote;
+  @JsonKey(defaultValue: false)
+  @override
+  final bool isLoading;
+  @JsonKey(defaultValue: false)
+  @override
+  final bool hasError;
 
   @override
   String toString() {
-    return 'DashboardState(currentView: $currentView)';
+    return 'DashboardState(currentView: $currentView, controller: $controller, title: $title, quote: $quote, isLoading: $isLoading, hasError: $hasError)';
   }
 
   @override
@@ -121,11 +216,20 @@ class _$_DashboardState implements _DashboardState {
         (other.runtimeType == runtimeType &&
             other is _DashboardState &&
             (identical(other.currentView, currentView) ||
-                other.currentView == currentView));
+                other.currentView == currentView) &&
+            (identical(other.controller, controller) ||
+                other.controller == controller) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.quote, quote) || other.quote == quote) &&
+            (identical(other.isLoading, isLoading) ||
+                other.isLoading == isLoading) &&
+            (identical(other.hasError, hasError) ||
+                other.hasError == hasError));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, currentView);
+  int get hashCode => Object.hash(
+      runtimeType, currentView, controller, title, quote, isLoading, hasError);
 
   @JsonKey(ignore: true)
   @override
@@ -134,11 +238,26 @@ class _$_DashboardState implements _DashboardState {
 }
 
 abstract class _DashboardState implements DashboardState {
-  const factory _DashboardState({DashboardViewEnum currentView}) =
-      _$_DashboardState;
+  const factory _DashboardState(
+      {DashboardViewEnum currentView,
+      required TabController controller,
+      String? title,
+      String? quote,
+      bool isLoading,
+      bool hasError}) = _$_DashboardState;
 
   @override
   DashboardViewEnum get currentView;
+  @override
+  TabController get controller;
+  @override
+  String? get title;
+  @override
+  String? get quote;
+  @override
+  bool get isLoading;
+  @override
+  bool get hasError;
   @override
   @JsonKey(ignore: true)
   _$DashboardStateCopyWith<_DashboardState> get copyWith =>
