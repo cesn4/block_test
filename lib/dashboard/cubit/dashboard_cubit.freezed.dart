@@ -22,7 +22,7 @@ class _$DashboardStateTearOff {
       required TabController controller,
       String? title,
       String? quote,
-      bool isLoading = false,
+      bool isLoading = true,
       bool hasError = false}) {
     return _DashboardState(
       currentView: currentView,
@@ -186,7 +186,7 @@ class _$_DashboardState implements _DashboardState {
       required this.controller,
       this.title,
       this.quote,
-      this.isLoading = false,
+      this.isLoading = true,
       this.hasError = false});
 
   @JsonKey(defaultValue: DashboardViewEnum.person)
@@ -198,7 +198,7 @@ class _$_DashboardState implements _DashboardState {
   final String? title;
   @override
   final String? quote;
-  @JsonKey(defaultValue: false)
+  @JsonKey(defaultValue: true)
   @override
   final bool isLoading;
   @JsonKey(defaultValue: false)
