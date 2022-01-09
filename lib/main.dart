@@ -1,4 +1,5 @@
 import 'package:block_test/auth/auth_page.dart';
+import 'package:block_test/auth/views/login_view.dart';
 import 'package:block_test/timer/timer_page.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             colorScheme: const ColorScheme.dark()
                 .copyWith(primary: Colors.amber, secondary: Colors.black)),
-        home: const TimerPage());
+        home: const AuthPage());
   }
 }

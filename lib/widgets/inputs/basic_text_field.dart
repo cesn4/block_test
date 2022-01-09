@@ -9,6 +9,7 @@ class BasicTextField extends StatelessWidget with BaseExtension {
   final bool obscureText;
   final FocusNode? focusNode;
   final TextInputAction? textInputAction;
+  final TextInputType? inputType;
   const BasicTextField({
     Key? key,
     required this.label,
@@ -18,6 +19,7 @@ class BasicTextField extends StatelessWidget with BaseExtension {
     this.obscureText = false,
     this.textInputAction,
     this.focusNode,
+    this.inputType,
   }) : super(key: key);
 
   @override
@@ -29,6 +31,7 @@ class BasicTextField extends StatelessWidget with BaseExtension {
       style: TextStyle(color: colors(context).secondary, fontSize: 24),
       onChanged: onChanged,
       textInputAction: textInputAction,
+      keyboardType: inputType,
       decoration: InputDecoration(
         labelText: label,
         labelStyle: TextStyle(color: colors(context).secondary, fontSize: 16),

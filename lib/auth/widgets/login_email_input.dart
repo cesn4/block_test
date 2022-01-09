@@ -16,6 +16,7 @@ class LoginEmailInput extends StatelessWidget {
           child: BasicTextField(
             label: 'email',
             initialValue: state.loginEmail.value,
+            inputType: TextInputType.emailAddress,
             focusNode: focusNode,
             onChanged: (value) {
               context.read<AuthBloc>().add(AuthEvent.loginEmailChanged(value));
