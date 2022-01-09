@@ -19,6 +19,12 @@ case $1 in
     rm -Rf ios/Flutter/Flutter.framework
     rm -Rf ios/Flutter/Flutter.podspec
     rm ios/Podfile
+    flutter pub get
+    ;;
+
+  m1-ios-reset)
+    sudo arch -x86_64 gem install ffi
+    arch -x86_64 pod install
     ;;
 
   *)

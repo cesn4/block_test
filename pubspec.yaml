@@ -17,6 +17,10 @@ dependencies:
   bloc: ^8.0.2
   flutter_bloc: ^8.0.1
 
+  # Firebase
+  firebase_auth: ^3.3.5
+  firebase_core: ^1.11.0
+
   formz: ^0.4.0
   very_good_analysis: ^2.3.0
 
@@ -25,8 +29,8 @@ dependencies:
   json_annotation: ^4.0.1
   equatable: ^2.0.3
 
-  # authentication_repository:
-  #   path: packages/authentication_repository
+  authentication_repository:
+    path: packages/authentication_repository
   # form_inputs:
   #   path: packages/form_inputs
 
