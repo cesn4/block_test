@@ -1,3 +1,5 @@
+// ignore_for_file: public_member_api_docs
+
 import 'dart:async';
 
 import 'package:authentication_repository/authentication_repository.dart';
@@ -5,6 +7,8 @@ import 'package:cache/cache.dart';
 import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
 import 'package:firebase_auth_platform_interface/firebase_auth_platform_interface.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:get/get.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:meta/meta.dart';
 
@@ -151,7 +155,9 @@ class LogOutFailure implements Exception {}
 /// {@template authentication_repository}
 /// Repository which manages user authentication.
 /// {@endtemplate}
-class AuthenticationRepository {
+class AuthenticationRepository extends GetxService {
+  static AuthenticationRepository get to => Get.find();
+
   /// {@macro authentication_repository}
   AuthenticationRepository({
     CacheClient? cache,

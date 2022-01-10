@@ -9,7 +9,5 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(MyApp(
-    authenticationRepository: AuthenticationRepository(),
-  ));
+  runApp(MyApp());
 }
