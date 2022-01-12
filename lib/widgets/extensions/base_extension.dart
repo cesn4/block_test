@@ -5,6 +5,10 @@ mixin BaseExtension {
     return Theme.of(context).colorScheme;
   }
 
+  TextTheme textTheme(BuildContext context) {
+    return Theme.of(context).textTheme;
+  }
+
   double maxHeight(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
     final topSafeArea = mediaQuery.padding.top;
