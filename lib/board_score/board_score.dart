@@ -55,7 +55,7 @@ class _BoardScorePageState extends State<BoardScorePage> with BaseExtension {
 
       sheet.inputs.forEach(
         (element) {
-          if (element.action != 'passive' &&
+          if (element.value_type != 'passive' &&
               element.input_value != null &&
               element.input_value != '') {
             num dependencyMultiplier = 1;

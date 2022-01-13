@@ -29,7 +29,8 @@ _$_CalculationSheetInput _$$_CalculationSheetInputFromJson(
       type: json['type'] as String,
       default_multiplier: json['default_multiplier'] as num,
       label: json['label'] as String,
-      action: json['action'] as String,
+      action: json['action'] as String?,
+      value_type: json['value_type'] as String?,
       dependencies: (json['dependencies'] as List<dynamic>)
           .map((e) => CalculationSheetInputDependency.fromJson(
               e as Map<String, dynamic>))
@@ -49,6 +50,7 @@ Map<String, dynamic> _$$_CalculationSheetInputToJson(
       'default_multiplier': instance.default_multiplier,
       'label': instance.label,
       'action': instance.action,
+      'value_type': instance.value_type,
       'dependencies': instance.dependencies,
       'asnwers': instance.asnwers,
       'input_value': instance.input_value,

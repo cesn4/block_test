@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 final Map<String, dynamic> scytheMock = {
   'title': 'Scythe',
   'inputs': [
@@ -6,7 +8,8 @@ final Map<String, dynamic> scytheMock = {
       'type': 'number',
       'default_multiplier': 1,
       'label': 'Popularity',
-      'action': 'passive',
+      'value_type': 'passive',
+      'action': null,
       'dependencies': [],
     },
     {
@@ -14,7 +17,7 @@ final Map<String, dynamic> scytheMock = {
       'type': 'number',
       'default_multiplier': 1,
       'label': 'Achieved Stars',
-      'value_type': 'passive',
+      'value_type': 'active',
       'action': 'increment',
       'dependencies': [
         {'id': 'scythe_popularity', 'max_value': 6, 'multiplier': 3},

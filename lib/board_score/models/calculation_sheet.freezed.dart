@@ -220,7 +220,8 @@ class _$CalculationSheetInputTearOff {
       required String type,
       required num default_multiplier,
       required String label,
-      required String action,
+      required String? action,
+      required String? value_type,
       required List<CalculationSheetInputDependency> dependencies,
       List<CalculationSheetInputAnswer>? asnwers,
       num? input_value}) {
@@ -230,6 +231,7 @@ class _$CalculationSheetInputTearOff {
       default_multiplier: default_multiplier,
       label: label,
       action: action,
+      value_type: value_type,
       dependencies: dependencies,
       asnwers: asnwers,
       input_value: input_value,
@@ -250,7 +252,8 @@ mixin _$CalculationSheetInput {
   String get type => throw _privateConstructorUsedError;
   num get default_multiplier => throw _privateConstructorUsedError;
   String get label => throw _privateConstructorUsedError;
-  String get action => throw _privateConstructorUsedError;
+  String? get action => throw _privateConstructorUsedError;
+  String? get value_type => throw _privateConstructorUsedError;
   List<CalculationSheetInputDependency> get dependencies =>
       throw _privateConstructorUsedError;
   List<CalculationSheetInputAnswer>? get asnwers =>
@@ -273,7 +276,8 @@ abstract class $CalculationSheetInputCopyWith<$Res> {
       String type,
       num default_multiplier,
       String label,
-      String action,
+      String? action,
+      String? value_type,
       List<CalculationSheetInputDependency> dependencies,
       List<CalculationSheetInputAnswer>? asnwers,
       num? input_value});
@@ -295,6 +299,7 @@ class _$CalculationSheetInputCopyWithImpl<$Res>
     Object? default_multiplier = freezed,
     Object? label = freezed,
     Object? action = freezed,
+    Object? value_type = freezed,
     Object? dependencies = freezed,
     Object? asnwers = freezed,
     Object? input_value = freezed,
@@ -319,7 +324,11 @@ class _$CalculationSheetInputCopyWithImpl<$Res>
       action: action == freezed
           ? _value.action
           : action // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
+      value_type: value_type == freezed
+          ? _value.value_type
+          : value_type // ignore: cast_nullable_to_non_nullable
+              as String?,
       dependencies: dependencies == freezed
           ? _value.dependencies
           : dependencies // ignore: cast_nullable_to_non_nullable
@@ -348,7 +357,8 @@ abstract class _$CalculationSheetInputCopyWith<$Res>
       String type,
       num default_multiplier,
       String label,
-      String action,
+      String? action,
+      String? value_type,
       List<CalculationSheetInputDependency> dependencies,
       List<CalculationSheetInputAnswer>? asnwers,
       num? input_value});
@@ -372,6 +382,7 @@ class __$CalculationSheetInputCopyWithImpl<$Res>
     Object? default_multiplier = freezed,
     Object? label = freezed,
     Object? action = freezed,
+    Object? value_type = freezed,
     Object? dependencies = freezed,
     Object? asnwers = freezed,
     Object? input_value = freezed,
@@ -396,7 +407,11 @@ class __$CalculationSheetInputCopyWithImpl<$Res>
       action: action == freezed
           ? _value.action
           : action // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
+      value_type: value_type == freezed
+          ? _value.value_type
+          : value_type // ignore: cast_nullable_to_non_nullable
+              as String?,
       dependencies: dependencies == freezed
           ? _value.dependencies
           : dependencies // ignore: cast_nullable_to_non_nullable
@@ -422,6 +437,7 @@ class _$_CalculationSheetInput implements _CalculationSheetInput {
       required this.default_multiplier,
       required this.label,
       required this.action,
+      required this.value_type,
       required this.dependencies,
       this.asnwers,
       this.input_value});
@@ -438,7 +454,9 @@ class _$_CalculationSheetInput implements _CalculationSheetInput {
   @override
   final String label;
   @override
-  final String action;
+  final String? action;
+  @override
+  final String? value_type;
   @override
   final List<CalculationSheetInputDependency> dependencies;
   @override
@@ -448,7 +466,7 @@ class _$_CalculationSheetInput implements _CalculationSheetInput {
 
   @override
   String toString() {
-    return 'CalculationSheetInput(id: $id, type: $type, default_multiplier: $default_multiplier, label: $label, action: $action, dependencies: $dependencies, asnwers: $asnwers, input_value: $input_value)';
+    return 'CalculationSheetInput(id: $id, type: $type, default_multiplier: $default_multiplier, label: $label, action: $action, value_type: $value_type, dependencies: $dependencies, asnwers: $asnwers, input_value: $input_value)';
   }
 
   @override
@@ -462,6 +480,8 @@ class _$_CalculationSheetInput implements _CalculationSheetInput {
                 other.default_multiplier == default_multiplier) &&
             (identical(other.label, label) || other.label == label) &&
             (identical(other.action, action) || other.action == action) &&
+            (identical(other.value_type, value_type) ||
+                other.value_type == value_type) &&
             const DeepCollectionEquality()
                 .equals(other.dependencies, dependencies) &&
             const DeepCollectionEquality().equals(other.asnwers, asnwers) &&
@@ -477,6 +497,7 @@ class _$_CalculationSheetInput implements _CalculationSheetInput {
       default_multiplier,
       label,
       action,
+      value_type,
       const DeepCollectionEquality().hash(dependencies),
       const DeepCollectionEquality().hash(asnwers),
       input_value);
@@ -499,7 +520,8 @@ abstract class _CalculationSheetInput implements CalculationSheetInput {
       required String type,
       required num default_multiplier,
       required String label,
-      required String action,
+      required String? action,
+      required String? value_type,
       required List<CalculationSheetInputDependency> dependencies,
       List<CalculationSheetInputAnswer>? asnwers,
       num? input_value}) = _$_CalculationSheetInput;
@@ -516,7 +538,9 @@ abstract class _CalculationSheetInput implements CalculationSheetInput {
   @override
   String get label;
   @override
-  String get action;
+  String? get action;
+  @override
+  String? get value_type;
   @override
   List<CalculationSheetInputDependency> get dependencies;
   @override
