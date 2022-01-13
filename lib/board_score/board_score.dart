@@ -100,10 +100,17 @@ class _BoardScorePageState extends State<BoardScorePage> with BaseExtension {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(bottom: 20),
+              padding: const EdgeInsets.only(bottom: 5),
               child: Text(
                 sheet.title,
                 style: textTheme(context).headline3,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 5),
+              child: Text(
+                'Overall score: ${getOverallScore()}',
+                style: textTheme(context).headline5,
               ),
             ),
             ...sheet.inputs.map(
@@ -132,13 +139,6 @@ class _BoardScorePageState extends State<BoardScorePage> with BaseExtension {
                     return const SizedBox();
                 }
               },
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 30),
-              child: Text(
-                'Overall score: ${getOverallScore()}',
-                style: textTheme(context).headline4,
-              ),
             ),
           ],
         ),
